@@ -1,0 +1,40 @@
+.hero_section {
+    background: rgb(2,0,36);
+    background: linear-gradient(173deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,254,255,1) 0%);
+}
+.hero_section h2{
+    color: #020024;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+.hero_content p{
+    color: #020024;
+    line-height: 28px;
+}
+
+.buy_btn{
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: #020024;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+.buy_btn a{
+    color: bisque;
+}
+.buy_btn a:hover{
+    color: #fff;
+}
+
+.hero_content p:nth-child(1){
+    font-weight: 500;
+}
+
+.hero_content{
+    padding-top: 45px;
+}

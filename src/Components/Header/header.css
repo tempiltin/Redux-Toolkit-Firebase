@@ -66,6 +66,22 @@ header {
   font-weight: 700 !important;
 }
 
-.acrt_icon, .fav_icon {
+.cart_icon, .fav_icon {
   position: relative;
+}
+
+.badge {
+  position: relative;
+  top: 20%;
+  right: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "";
+  background: green;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 10;
 }/*# sourceMappingURL=header.css.map */
