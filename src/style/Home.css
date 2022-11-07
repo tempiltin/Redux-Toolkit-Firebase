@@ -38,3 +38,21 @@
 .hero_content{
     padding-top: 45px;
 }
+
+.timer_count{
+    width: 100%;
+    height: 400px;
+    background-color: #020024;
+}
+.timer_count img{
+   width: 40% !important;
+   object-fit: contain;
+  
+}
+.store_btn{
+    background-color: #fff;
+}
+.store_btn a , .store_btn a:hover{
+    color: #020024;
+    font-weight: 600;
+}
