@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import "./header.css"
 import { Container, Row } from 'reactstrap'
-import {  NavLink } from 'react-router-dom'
-import {motion} from "framer-motion"
+import { NavLink } from 'react-router-dom'
+import { motion } from "framer-motion"
 import userIcon from "../../Assets/image/22-223910_circle-user-png-icon-transparent-png.png";
 
 const nav_links = [
@@ -22,7 +22,24 @@ const nav_links = [
 const Header = () => {
 
 
-  return <header className="header">
+  const headerRef = useRef(null);
+
+  const stickyHeaderFunc = () => {
+    window.addEventListener("scroll", () => {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        headerRef.current.classList.add("sticky_header")
+      } else {
+        headerRef.current.classList.remove("sticky_header")
+      }
+    })
+  }
+  useEffect(() => {
+    stickyHeaderFunc()
+
+    return () => window.removeEventListener("scroll" , stickyHeaderFunc)
+  })
+
+  return <header className="header" ref={headerRef}>
     <Container>
       <Row>
         <div className="nav_wrapper">
@@ -56,7 +73,7 @@ const Header = () => {
               <span className="badge">1</span>
             </span>
             <span>
-              <motion.img whileTap={{scale: 1.2}} src={userIcon} alt="" />
+              <motion.img whileTap={{ scale: 1.2 }} src={userIcon} alt="" />
             </span>
           </div>
 

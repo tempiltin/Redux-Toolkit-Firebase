@@ -2,7 +2,9 @@ header {
     width: 100%;
     height: 70px;
     line-height: 70px;
-
+  i{
+    color: black;
+  }
 }
 
 .nav_wrapper {
@@ -86,4 +88,16 @@ header {
     font-size: 0.8rem;
     font-weight: 600;
     z-index: 10;
+}
+
+.sticky_header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 3px 3px 8px -3px rgb(145, 116, 116);
+    background: wheat;
 }

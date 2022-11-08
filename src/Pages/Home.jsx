@@ -23,23 +23,29 @@ const Home = () => {
   // States==============================================================
   const [trendingProducts, setTrendingProducts] = useState([])
   const [bestSalesProducts, setBestSalesProducts] = useState([])
+  const [mobileProducts, setMobileProducts] = useState([])
+  const [wirelessProducts, setWirelessProducts] = useState([])
+  const [popularProducts, setPopularProducts] = useState([])
   const year = new Date().getFullYear()
 
   useEffect(() => {
     // data filter
-    const filterTrendingProducts = products.filter(
-      item => item.category === "chair"
-    )
-    const filterBestSalesProducts = products.filter(
-      item => item.category === "sofa"
-    )
+    const filterTrendingProducts = products.filter(item => item.category === "chair")
+    const filterBestSalesProducts = products.filter(item => item.category === "sofa")
+    const filterMobileProducts = products.filter(item => item.category === "mobile")
+    const filterWirelessProducts = products.filter(item => item.category === "wireless")
+    const filterPopularProducts = products.filter(item => item.category === "watch")
+
     setTrendingProducts(filterTrendingProducts)
     setBestSalesProducts(filterBestSalesProducts)
+    setMobileProducts(filterMobileProducts)
+    setWirelessProducts(filterWirelessProducts)
+    setPopularProducts(filterPopularProducts)
   }, [])
 
 
 
- // Compinents ========================================================= return 
+  // Compinents ========================================================= return 
   return <Helmet title={"Home"}>
     <section className="hero_section">
       <Container>
@@ -90,23 +96,47 @@ const Home = () => {
 
 
     <section className="timer_count">
-       <Container>
-         <Row>
-           <Col lg={"6"} md={"6"}>
+      <Container>
+        <Row>
+          <Col lg={"6"} md={"6"}>
             <div className="clock_top_content">
               <h4 className='text-white fs-6 mb-2'>Limited offers</h4>
               <h3 className='text-white fs-5 mb-3'>Quality Armshair</h3>
             </div>
-              <Clock />
-              <motion.button whileTap={{scale:1.2}} className='buy_btn store_btn'>
-                <Link to={"/shop"}>Visit Store</Link>
-              </motion.button>
-           </Col>
-           <Col lg={"6"} md={"6"} className={"text-end"}>
-              < motion.img whileHover={{scale:1.2}} src={timeCountIMG} alt={Date()}/>
-           </Col>
-         </Row>
-       </Container>
+            <Clock />
+            <motion.button whileTap={{ scale: 1.2 }} className='buy_btn store_btn'>
+              <Link to={"/shop"}>Visit Store</Link>
+            </motion.button>
+          </Col>
+          <Col lg={"6"} md={"6"} className={"text-end"}>
+            < motion.img whileHover={{ scale: 1.2 }} src={timeCountIMG} alt={Date()} />
+          </Col>
+        </Row>
+      </Container>
+    </section>
+
+    <section className="new_arrivals">
+      <Container>
+        <Row>
+          <Col lg={"12"} className="text-center">
+            <h2 className="section_title mb-3">New Arrivals</h2>
+          </Col>
+          <ProductsList data={mobileProducts} />
+          <ProductsList data={wirelessProducts} />
+        </Row>
+      </Container>
+    </section>
+
+
+    <section className="popular_category">
+      <Container>
+        <Row>
+          <Col lg={"12"} className="text-center mb-5">
+            <h2 className="section_title mb-4">Popular in Category</h2>
+          </Col>
+          <ProductsList data={popularProducts} />
+        </Row>
+      </Container>
     </section>
   </Helmet>
 }
