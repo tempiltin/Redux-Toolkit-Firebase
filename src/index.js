@@ -5,12 +5,27 @@ import App from './App';
 import "remixicon/fonts/remixicon.css"
 import "bootstrap/dist/css/bootstrap.css"
 import { BrowserRouter } from 'react-router-dom';
+import store from './Redux/Store';
+import { Provider } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter >
-    <App />
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter >
+    <Provider store={store}>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+
+        closeOnClick
+
+
+        pauseOnHover
+  theme='dark'
+      />
+        {/* Same as */}
+        <ToastContainer />
+        <App />
+    </Provider>
+  </BrowserRouter>
 );
 

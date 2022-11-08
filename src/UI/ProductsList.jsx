@@ -4,9 +4,9 @@ import ProductCard from './ProductCard'
 const Products = ({data}) => {
   return <>
   {
-    data?.map(item=>(
+    data?.map((item,index)=>(
 
-      <ProductCard  item={item} key={item.id}/>
+      <ProductCard  item={item} key={index}/>
     ))
   }
   </>
