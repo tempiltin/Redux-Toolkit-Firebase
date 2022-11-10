@@ -1,0 +1,15 @@
+.common_section{
+    background: linear-gradient(rgba(0, 0, 0, 0.532),rgba(0, 0, 0, 0.532)),url("../Assets/image/simple-home-office.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.common_section h1{
+    color: #fff;
+    font-weight: 600;
+}

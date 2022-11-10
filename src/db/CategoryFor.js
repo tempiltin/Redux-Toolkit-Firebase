@@ -1,0 +1,33 @@
+const categoryFor = [
+  {
+    id:1,
+    name:"Sofa",
+    category:"sofa"
+  },
+  {
+    id:2,
+    name:"Watch",
+    category:"watch"
+  },
+  {
+    id:3,
+    name:"Chair",
+    category:"chair"
+  },
+  {
+    id:4,
+    name:"Mobile",
+    category:"mobile"
+  },
+  {
+    id:5,
+    name:"Wireless",
+    category:"wireless"
+  },
+  {
+    id:6,
+    name:"Laptop",
+    category:"laptop"
+  },
+]
+export default categoryFor ;

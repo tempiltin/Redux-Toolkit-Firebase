@@ -1,5 +1,6 @@
 .product_item{
     cursor: pointer;
+    border: 1px solid #020024;
 }
 .product-info h3{
     font-size: 1.2rem;

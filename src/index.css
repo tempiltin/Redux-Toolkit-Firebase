@@ -6,6 +6,7 @@
   text-decoration: none !important;
   color: black;
 }
+::-webkit-scrollbar {  width: 6px; background-color: transparent !important;} ::-webkit-scrollbar-thumb {  background: #00b1e3;  border-radius: 15px;}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -27,4 +28,12 @@ img{
 
 section{
   padding: 60px 0px;
+}
+.Errdata{
+  justify-content: center;
+  align-items: center;
+}
+.Errdata img{
+ width: 70%;
+ margin: auto;
 }

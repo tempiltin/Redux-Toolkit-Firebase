@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 import "../style/product-card.css"
 import { motion } from 'framer-motion'
 import { Col } from 'reactstrap';
-import { ToastContainer,toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 //
 import { useDispatch } from 'react-redux';
 import { cartActions } from '../Redux/slices/cartSlice';
@@ -19,6 +19,8 @@ const ProductCard = ({item}) => {
             price:item.price,
             image:item.img,
         }))
+
+        toast.success('Product added successfully')
     }
 
     return (
@@ -26,6 +28,7 @@ const ProductCard = ({item}) => {
             <div className="product_item">
                 <div className="product_img">
                     <motion.img whileHover={{scale:0.9}} src={item.img} alt="" />
+                    
                 </div>
                 <div className="p-2 product-info">
                     <h3 className="product_name"><Link to={`/shop/${item.id}`}>{item.name} </Link></h3>
