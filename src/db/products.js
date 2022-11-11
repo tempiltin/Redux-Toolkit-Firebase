@@ -10,10 +10,16 @@ const products = [
     img: img,
     name: "Chair",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
-    avgRating:15,
-    review:10,
-    
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
+
   },
   {
     id: 2,
@@ -21,8 +27,16 @@ const products = [
     img: img,
     name: "Chair",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
-
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
+    
   },
   {
     id: 3,
@@ -30,7 +44,15 @@ const products = [
     img: img,
     name: "Chair",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
   {
@@ -39,7 +61,15 @@ const products = [
     img: img,
     name: "Chair",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
 
@@ -49,7 +79,15 @@ const products = [
     img: sofa,
     name: "Sofa",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
   {
@@ -58,7 +96,15 @@ const products = [
     img: sofa,
     name: "Sofa",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
   {
@@ -67,7 +113,15 @@ const products = [
     img: sofa,
     name: "Sofa",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
   {
@@ -76,7 +130,15 @@ const products = [
     img: sofa,
     name: "Sofa",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
 
@@ -86,7 +148,15 @@ const products = [
     img: phone,
     name: "Iphone",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
   {
@@ -95,7 +165,15 @@ const products = [
     img: phone,
     name: "Iphone",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
   {
@@ -104,7 +182,15 @@ const products = [
     img: phone,
     name: "Iphone",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
   {
@@ -113,7 +199,15 @@ const products = [
     img: phone,
     name: "Iphone",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
 
@@ -125,7 +219,15 @@ const products = [
     img: air,
     name: "AirPods",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
   {
@@ -134,7 +236,15 @@ const products = [
     img: air,
     name: "AirPods",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
   {
@@ -143,7 +253,15 @@ const products = [
     img: air,
     name: "AirPods",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
   {
@@ -152,7 +270,15 @@ const products = [
     img: air,
     name: "AirPods",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
 
@@ -162,7 +288,15 @@ const products = [
     img: watch,
     name: "Watch",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
   {
@@ -171,7 +305,15 @@ const products = [
     img: watch,
     name: "Watch",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
   {
@@ -180,7 +322,15 @@ const products = [
     img: watch,
     name: "Watch",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
   {
@@ -189,7 +339,15 @@ const products = [
     img: watch,
     name: "Watch",
     price: 1200,
-    description:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    short_description: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda dolorem doloremque molestiae nemo reiciendis.",
+    avgRating: 4.5,
+    review:[
+      {
+        rating:4,
+        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+      }
+    ],
 
   },
 

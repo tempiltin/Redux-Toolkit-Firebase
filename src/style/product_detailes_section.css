@@ -1,0 +1,87 @@
+
+.product_detailes_section{
+    color: black !important;
+}
+.product_detailes{
+    margin-top: 50px;
+}
+.product_detailes h2{
+    font-size: 1.8rem;
+margin-bottom: 10px;
+}
+
+.product_rating span i{
+    color: coral;
+}
+.product_rating  p span {
+    color: coral;
+    font-weight: 700;
+}
+.product_price{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.tab_wrapper {
+    color: #020024;
+    font-size: 1.2rem;
+}
+h6{
+    cursor: pointer;
+}
+.active_tab{
+    font-weight: 700 !important;
+}
+
+p{
+    color: #020024;
+}
+.review_wrapper ul li span{
+ color: coral;
+}
+.review_wrapper ul li p{
+    margin-top: 10px;
+}
+.form_group i{
+    color: #020024;
+}
+
+.review_form{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+
+}
+.review_form h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+.form_group {
+    margin-bottom: 30px;
+}
+.form_group  span , .form_group  i{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    color: coral;
+}
+.form_group input , .form_group textarea{
+    width: 100%;
+    border: 1px solid  #020024;
+
+    border-radius: 5px;
+    padding: 8px 20px;
+    outline: none;
+
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.related_title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 30px;
+    
+}
