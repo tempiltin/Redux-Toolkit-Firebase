@@ -13,6 +13,9 @@ const cartSlice = createSlice({
     reducers: {
         addItem: (state, action) => {
             const newItem = action.payload
+            // console.log("=================================");
+            // console.log(newItem , "=======================");
+            // console.log("=================================");
             const existingItem = state.cartItems.find(item => item.id === newItem.id)
             state.totalQuantity++
 
@@ -20,7 +23,7 @@ const cartSlice = createSlice({
                 state.cartItems.push({
                     id: newItem.id,
                     productName: newItem.productName,
-                    image: newItem.imageUrl,
+                    image: newItem.image,
                     price: newItem.price,
                     quantity: 1,
                     totalPrice: newItem.price
@@ -29,12 +32,28 @@ const cartSlice = createSlice({
                 existingItem.quantity++
                 existingItem.totalPrice = Number(existingItem.totalPrice) + Number( newItem.price)
             }
-            state.totalAmount = state.cartItems.reduce((total, item)=> total+ Number(item.price) * Number(item.quantity))
-            console.log(state.totalQuantity);
-            console.log(state.cartItems);
-            console.log(newItem);
-        }   
-    }
+            state.totalAmount = state.cartItems.reduce((total, item)=> total+ Number(item.price) * Number(item.quantity),0)
+            // console.log(state.totalQuantity);
+            // console.log(state.cartItems);
+            // console.log(newItem.image);
+        },  
+        deleteItem:(state,action)=>{
+            const id = action.payload;
+            const  existingItem = state.cartItems.find(item => item.id === id);
+            if(existingItem){
+              
+                state.cartItems = state.cartItems.filter(item => item.id !== id)
+                // state.totalQuantity = state.totalQuantity - 1
+                state.totalQuantity = state.totalQuantity - existingItem.quantity
+                console.log(state.totalQuantity = state.totalQuantity - existingItem.quantity);
+            }
+            // cartni ayirishda xatolik
+            state.totalAmount = state.cartItems.reduce((total, item)=> total+ Number(item.price) * Number(item.quantity),0)
+    
+    } 
+   
+    },
+ 
 });
 
 export const cartActions = cartSlice.actions

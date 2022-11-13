@@ -62,7 +62,7 @@ const Footer = () => {
               <ListGroupItem className='ps-0 border-0'>
                 <span>
                   <i className="ri-map-pin-line"></i>
-                  <p>123,Samarkhand , Uzbekistan</p>
+                  <p className='text-white'>123,Samarkhand , Uzbekistan</p>
                 </span>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 text-white'>

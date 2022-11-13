@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import "./header.css"
 import { Container, Row } from 'reactstrap'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { motion } from "framer-motion"
 import userIcon from "../../Assets/image/22-223910_circle-user-png-icon-transparent-png.png";
 import { useSelector } from 'react-redux'
@@ -21,7 +21,7 @@ const nav_links = [
 ]
 const Header = () => {
 
-
+  const navigate = useNavigate()
   const headerRef = useRef(null);
   const totalQuantitiy = useSelector(state => state.cart.totalQuantity);
 
@@ -39,7 +39,9 @@ const Header = () => {
 
     return () => window.removeEventListener("scroll" , stickyHeaderFunc)
   })
-
+  const navigateToCart = ()=>{
+    navigate('/cart')
+  }
   return <header className="header" ref={headerRef}>
     <Container>
       <Row>
@@ -69,10 +71,10 @@ const Header = () => {
               <i className="ri-heart-line"></i>
               <span className="badge">1</span>
             </span>
-            <span className='cart_icon'>
+            <motion.span whileTap={{scale:1.2}} className='cart_icon'  onClick={navigateToCart}>
               <i className="ri-shopping-bag-line"></i>
               <span className="badge">{totalQuantitiy}</span>
-            </span>
+            </motion.span>
             <span>
               <motion.img whileTap={{ scale: 1.2 }} src={userIcon} alt="" />
             </span>
