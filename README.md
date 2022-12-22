@@ -12,3 +12,8 @@ https://www.youtube.com/watch?v=mB8ajdvRnC0
 44:15
 1:25:54
 https://www.youtube.com/watch?v=yZDo5IPATOE
+24:39
+31:40
+37:00
+41:00
+https://www.youtube.com/watch?v=s8sp3KhBrGI

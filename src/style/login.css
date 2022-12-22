@@ -1,0 +1,15 @@
+
+.auth_form{
+    background-color: var(--dark);
+    padding: 15px;
+}
+.auth_btn{
+    background-color: wheat;
+    color: #000;
+}
+.auth_form p{
+    color: #fff;
+}
+.auth_form input[type='file']{
+    color: #fff;
+}

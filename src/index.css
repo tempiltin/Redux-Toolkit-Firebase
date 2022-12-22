@@ -6,6 +6,9 @@
   text-decoration: none !important;
   color: black;
 }
+:root{
+  --dark:#020024;
+}
 ::-webkit-scrollbar {  width: 6px; background-color: transparent !important;} ::-webkit-scrollbar-thumb {  background: #00b1e3;  border-radius: 15px;}
 body {
   margin: 0;

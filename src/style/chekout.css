@@ -1,0 +1,33 @@
+.form_droup input {
+    border: 1px solid #020024;
+    outline: none;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.checkout_cart {
+    padding: 20px;
+    background: #020024;
+    color: #fff !important;
+    border-radius: 5px;
+}
+.checkout_cart h6,h4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.checkout_cart h6{
+    margin-top: 20px;
+
+}
+
+.checkout_cart h4{
+    border-top: 1px solid rgba(221,221,221,0.253);
+    padding-top: 20px;
+}
+.auth_btn{
+    width: 100%;
+    background-color: aliceblue;
+    color: #020024;
+}

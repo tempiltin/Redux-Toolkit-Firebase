@@ -101,3 +101,30 @@ header {
     box-shadow: 3px 3px 8px -3px rgb(145, 116, 116);
     background: wheat;
 }
+.nav_icons{
+    position: relative;
+    .about_cart_me{
+      position: absolute;
+      right: 0;
+      bottom: -130%;
+      padding: 5px;
+      border-radius: 5px;
+      background: #fff;
+      border: 1px solid black;
+    }
+    .about_cart_me_false{
+      position: absolute;
+      right: 0;
+      bottom: -160%;
+      padding: 5px;
+      border-radius: 5px;
+      background: #fff;
+      border: 1px solid black;
+    }
+}
+.line-28{
+    line-height:28px;
+    li{
+        cursor: pointer;
+    }
+}
